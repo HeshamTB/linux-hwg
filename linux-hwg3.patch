@@ -1,0 +1,24 @@
+ drivers/net/wireguard/messages.h | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/drivers/net/wireguard/messages.h b/drivers/net/wireguard/messages.h
+index 208da7267..5a65554a6 100644
+--- a/drivers/net/wireguard/messages.h
++++ b/drivers/net/wireguard/messages.h
+@@ -54,11 +54,11 @@ enum limits {
+ };
+ 
+ enum message_type {
+-	MESSAGE_INVALID = 0,
+-	MESSAGE_HANDSHAKE_INITIATION = 1,
+-	MESSAGE_HANDSHAKE_RESPONSE = 2,
+-	MESSAGE_HANDSHAKE_COOKIE = 3,
+-	MESSAGE_DATA = 4
++	MESSAGE_INVALID = 5,
++	MESSAGE_HANDSHAKE_INITIATION = 6,
++	MESSAGE_HANDSHAKE_RESPONSE = 7,
++	MESSAGE_HANDSHAKE_COOKIE = 8,
++	MESSAGE_DATA = 9
+ };
+ 
+ struct message_header {
